@@ -1,0 +1,3 @@
+100000001Bundesbank                                                10591Berlin                             BBk Berlin                 20100MARKDEF110009011380U000000000
+100000002Bundesbank                                                10591Berlin                             BBk Berlin                 20100MARKDEF110009011380U000000000
+200000001Bundesbank                                                22772Hamburg                            BBk Hamburg                20200MARKDEF120009011381U000000000

@@ -1,4 +1,7 @@
 /blz-aktuell-txt-data.txt
 /data/code-*.php
 /data/name-*.php
+/tests/coverage/
+/tests/parser/code-*.php
+/tests/parser/name-*.php
 /vendor/
