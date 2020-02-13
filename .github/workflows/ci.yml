@@ -15,5 +15,6 @@ jobs:
         uses: shivammathur/setup-php@v1
         with:
           php-version: ${{ matrix.php-versions }}
+          tools: phpunit
       - name: Tests
-        run: ./vendor/bin/phpunit
+        run: phpunit
