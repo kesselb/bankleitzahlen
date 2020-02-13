@@ -18,7 +18,7 @@ class BankNameTest extends TestCase
     public function testNoSuchBankleitzahl(): void
     {
         $this->expectException(\RuntimeException::class);
-        $this->expectDeprecationMessage('There is no such bankleitzahl');
+        $this->expectExceptionMessage('There is no such bankleitzahl');
         $this->finder->byBankleitzahl('10000001');
     }
 
@@ -29,7 +29,7 @@ class BankNameTest extends TestCase
     public function testInvalidBankleitzahl(string $bankleitzahl): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectDeprecationMessage('Invalid bankleitzahl');
+        $this->expectExceptionMessage('Invalid bankleitzahl');
         $this->finder->byBankleitzahl($bankleitzahl);
     }
 
@@ -50,14 +50,14 @@ class BankNameTest extends TestCase
     public function testNoSuchBankleitzahlByIBAN()
     {
         $this->expectException(\RuntimeException::class);
-        $this->expectDeprecationMessage('There is no such bankleitzahl');
+        $this->expectExceptionMessage('There is no such bankleitzahl');
         $this->finder->byIBAN('DE00100000011234567890');
     }
 
     public function testIbanNotSupportedByIBAN()
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->expectDeprecationMessage('IBAN is not supported');
+        $this->expectExceptionMessage('IBAN is not supported');
         $this->finder->byIBAN('DE00100000');
     }
 
