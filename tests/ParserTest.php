@@ -27,6 +27,8 @@ class ParserTest extends TestCase
         $parser->parse();
 
         $this->assertStringEqualsFile(__DIR__ . '/parser/code-1.php', "<?php\n\nreturn array (\n  10000000 => 'MARKDEF1100',\n);");
+        $this->assertStringEqualsFile(__DIR__ . '/parser/code-2.php', "<?php\n\nreturn array (\n  20000000 => 'MARKDEF1200',\n);");
         $this->assertStringEqualsFile(__DIR__ . '/parser/name-1.php', "<?php\n\nreturn array (\n  10000000 => 'Bundesbank',\n);");
+        $this->assertStringEqualsFile(__DIR__ . '/parser/name-2.php', "<?php\n\nreturn array (\n  20000000 => 'Bundesbank',\n);");
     }
 }

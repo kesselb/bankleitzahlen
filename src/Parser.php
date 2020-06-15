@@ -67,6 +67,9 @@ class Parser
         }
 
         fclose($handle);
+
+        $this->write();
+        $this->reset();
     }
 
     protected function write(): void
