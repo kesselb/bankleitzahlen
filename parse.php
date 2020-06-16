@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Script to parse blz-aktuell-txt-data.txt
+ * https://www.bundesbank.de/de/aufgaben/unbarer-zahlungsverkehr/serviceangebot/bankleitzahlen
+ */
+
 require 'vendor/autoload.php';
 
 $sourceFile = __DIR__ . '/blz-aktuell-txt-data.txt';
