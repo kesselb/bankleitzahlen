@@ -33,7 +33,7 @@ abstract class Reader
      */
     public function byBankleitzahl(int $bankleitzahl)
     {
-        if ($bankleitzahl < 10000000 || $bankleitzahl > 79999999) {
+        if ($bankleitzahl < 10000000 || $bankleitzahl > 89999999) {
             throw new InvalidArgumentException('Invalid bankleitzahl');
         }
 
